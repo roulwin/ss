@@ -66,7 +66,7 @@ local function get_weather(location)
 	local weather = json:decode(b)
 	local city = weather.name
 	local country = weather.sys.country
-	local temp = 'دمای شهر '..city..' هم اکنون '..weather.main.temp..' درجه سانتی گراد می باشد\n____________________\n @BeyondTeam :)'
+	local temp = 'دمای شهر '..city..' هم اکنون '..weather.main.temp..' درجه سانتی گراد می باشد\n____________________\n @Y453R :)'
 	local conditions = 'شرایط فعلی آب و هوا : '
 	if weather.weather[1].main == 'Clear' then
 		conditions = conditions .. 'آفتابی☀'
@@ -88,7 +88,7 @@ local function calc(exp)
 	b,c = http.request(url)
 	text = nil
 	if c == 200 then
-    text = 'Result = '..b..'\n____________________\n @BeyondTeam :)'
+    text = 'Result = '..b..'\n____________________\n @Y453R :)'
 	elseif c == 400 then
 		text = b
 	else
@@ -196,7 +196,7 @@ tdcli.sendMessage(msg.from.id, 0, 1, text, 1, 'md')
 		text = text..'\nغروب آفتاب: '..data.Sunset
 		text = text..'\nاذان مغرب: '..data.Maghrib
 		text = text..'\nعشاء : '..data.Isha
-		text = text..'\n@BeyondTeam\n'
+		text = text..'\n@Y453R\n'
         return edit_msg(msg.to.id, msg.id, text, "html")
 	end
 --------------------------------
@@ -220,7 +220,7 @@ tdcli.sendMessage(msg.from.id, 0, 1, text, 1, 'md')
        else
      edit_msg(msg.to.id, msg.id, "😐", "md")
    end
-						tdcli.sendPhoto(msg.to.id, 0, 0, 1, nil, pfile, "@BeyondTeam", dl_cb, nil)
+						tdcli.sendPhoto(msg.to.id, 0, 0, 1, nil, pfile, "@Y453R", dl_cb, nil)
 					else
          edit_msg(msg.to.id, msg.id, '_This sticker does not exist. Send sticker again._', "md")
 					end
@@ -247,7 +247,7 @@ tdcli.sendMessage(msg.from.id, 0, 1, text, 1, 'md')
        else
      edit_msg(msg.to.id, msg.id, "😐", "md")
    end
-						tdcli.sendDocument(msg.chat_id_, 0, 0, 1, nil, pfile, '@BeyondTeam', dl_cb, nil)
+						tdcli.sendDocument(msg.chat_id_, 0, 0, 1, nil, pfile, '@Y453R', dl_cb, nil)
 					else
          edit_msg(msg.to.id, msg.id, '_This photo does not exist. Send sticker again._', "md")
 					end
@@ -310,7 +310,7 @@ end
 	if matches[1] == "tr" and is_sudo(msg) then 
 		url = https.request('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160119T111342Z.fd6bf13b3590838f.6ce9d8cca4672f0ed24f649c1b502789c9f4687a&format=plain&lang='..URL.escape(matches[2])..'&text='..URL.escape(matches[3]))
 		data = json:decode(url)
-		local text = 'زبان : '..data.lang..'\nترجمه : '..data.text[1]..'\n____________________\n @BeyondTeam :)'
+		local text = 'زبان : '..data.lang..'\nترجمه : '..data.text[1]..'\n____________________\n @Y453R :)'
    return edit_msg(msg.to.id, msg.id, text, "md")
 	end
 --------------------------------
@@ -326,7 +326,7 @@ end
 		local data = json:decode(bitly)
 		local u2s = http.request('http://u2s.ir/?api=1&return_text=1&url='..URL.escape(shortlink))
 		local llink = http.request('http://llink.ir/yourls-api.php?signature=a13360d6d8&action=shorturl&url='..URL.escape(shortlink)..'&format=simple')
-		local text = ' 🌐لینک اصلی :\n'..check_markdown(data.data.long_url)..'\n\nلینکهای کوتاه شده با 6 سایت کوتاه ساز لینک : \n》کوتاه شده با bitly :\n___________________________\n'..(check_markdown(data.data.url) or '---')..'\n___________________________\n》کوتاه شده با u2s :\n'..(check_markdown(u2s) or '---')..'\n___________________________\n》کوتاه شده با llink : \n'..(check_markdown(llink) or '---')..'\n___________________________\n》لینک کوتاه شده با yon : \nyon.ir/'..(check_markdown(jdat.output) or '---')..'\n____________________\n@BeyondTeam'
+		local text = ' 🌐لینک اصلی :\n'..check_markdown(data.data.long_url)..'\n\nلینکهای کوتاه شده با 6 سایت کوتاه ساز لینک : \n》کوتاه شده با bitly :\n___________________________\n'..(check_markdown(data.data.url) or '---')..'\n___________________________\n》کوتاه شده با u2s :\n'..(check_markdown(u2s) or '---')..'\n___________________________\n》کوتاه شده با llink : \n'..(check_markdown(llink) or '---')..'\n___________________________\n》لینک کوتاه شده با yon : \nyon.ir/'..(check_markdown(jdat.output) or '---')..'\n____________________\n@Y453R'
 		return edit_msg(msg.to.id, msg.id, text, "html")
 	end
 --------------------------------
@@ -381,7 +381,7 @@ end
        else
      edit_msg(msg.to.id, msg.id, "😐", "md")
    end
-		tdcli.sendPhoto(msg.to.id, 0, 0, 1, nil, file, "@BeyondTeam", dl_cb, nil)
+		tdcli.sendPhoto(msg.to.id, 0, 0, 1, nil, file, "@Y453R", dl_cb, nil)
 	end
 end
 end
