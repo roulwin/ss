@@ -75,12 +75,12 @@ end
 function create_self( )
   self = {
     names = {
-    "solid",
-    "سلید",
-    "سولید",
-    "سعید",
-    "saeed",
-    "saeid"
+    "یاسر",
+    "یاس",
+    "Y453R",
+    "YASER",
+    "Yaser",
+    "yas"
     },
     answers = {
     "وات؟ :/",
@@ -128,31 +128,14 @@ function create_config( )
 		"tools",
      "fun"
 	},
-    sudo_users = {157059515},
+    sudo_users = {749954034},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》Beyond Self Bot V3.0
-An fun bot based on BDReborn
-
-》https://github.com/BeyondTeam/BDSelf 
-
+    info_text = [[》Y453R Self Bot V3.0
+		
 》Admins :
-》@SoLiD ➣ Founder & Developer《
-》@Makan ➣ Developer & Sponser《
-》@ToOfan ➣ Developer《
-
-》Special thanks to :
-》@kuncen
-》@Vysheng
-》@MrHalix
-》And Beyond Team Members
-
-》Our channel :
-》@BeyondTeam《
-
-》Our website :
-》http://BeyondTeam.ir
+》@Y453R ➣ Founder & Developer《
 ]],
   }
 	serialize_to_file(config, './data/config.lua')
