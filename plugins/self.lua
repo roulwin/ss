@@ -4,10 +4,10 @@
 #        Self Plugin           #
 #                              #
 #                              #
-#     by @SoLiD ⇨Saeid⇦       #
+#     by @Y453R ⇨yaser⇦       #
 #                              #
 #                              #
-#   Team Channel @BeyondTeam   #
+#   Team Channel @Y453R        #
 #	                       #
 #                              #
 #     Update: 2 March 2017     #
